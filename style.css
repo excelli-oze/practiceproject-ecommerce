@@ -94,22 +94,37 @@ body{
 }
 
 .container-3 h2,
-.container-4 h2{
+.container-4 h2,
+.container-8 h2,
+.container-10 h2{
     margin: 0px;
     padding: 40px 16px;
-    font-size: 26px;
+    font-size: 34px;
+}
+.container-8-content h2{
+    padding: 16px 0px 16px 0px;
+}
+.container-8-content p,
+.container-9-content p{
+    margin-bottom: 64px;
 }
 .container-3-content,
 .container-4-content,
 .container-6,
-.container-7-content{
+.container-7-content,
+.container-8-content,
+.footer-container-content{
     padding: 40px 16px;
+}
+.container-8-content{
+    text-align: center;
 }
 .container-3-content p{
     padding-bottom: 20px;
 }
 .container-3-content span,
-.container-3-content button{
+.container-3-content button,
+.bordered-btn{
     text-transform: uppercase;
 }
 .container-3-content h3,
@@ -130,13 +145,25 @@ body{
     margin: 0px;
     padding: 16px 16px 8px 16px;
 }
-.container-3-content button{
+.container-3-content button,
+.bordered-btn{
     width: 100%;
     padding: 15px 20px;
     background-color: white;
     border: 1.5px solid black;
     border-radius: 0px;
     font-weight: 600;
+}
+
+.white-bordered-btn{
+    width: 100%;
+    padding: 15px 20px;
+    background-color: transparent;
+    border: 1.5px solid white;
+    border-radius: 0px;
+    text-transform: uppercase;
+    color: #fff;
+
 }
 
 .container-5 .image-box img{
@@ -157,14 +184,16 @@ body{
 .container-6 p{
     font-size: 18px;
 }
-.container-6 input{
+.container-6 input,
+.footer-container input{
     border: 1px solid #888;
     width: -webkit-fill-available;
     border-radius: 0px;
     margin: 20px 0px;
     padding: 15px 20px;
 }
-.container-6 button{
+.container-6 button,
+.footer-container button{
     background: #000;
     color: #fff;
     border-radius: 0px;
@@ -175,4 +204,64 @@ body{
 .container-7 p.contact-number,
 .container-7 p.office-address{
     font-weight: 600;
+}
+.container-8 img{
+    width: 100%;
+}
+
+.container-9{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(./Images/container-9-bg-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    padding: 40px 16px;
+    text-align: center;
+}
+.container-9-content h2{
+    font-size: 34px;
+    padding: 16px 0px;
+    margin: 0px;
+    font-weight: 400;
+}
+.container-10 p.review{
+    margin-bottom: 0px;
+    font-size: 22px;
+    font-style: italic;
+}
+.container-10 p.review-text{
+    margin: 0px 0px 8px 0px;
+}
+
+
+.footer-container-content p{
+    margin: 0px;
+}
+
+
+.footer-container-content h5{
+    font-size: 18px;
+    color: #424245;
+    margin: 16px 0px;
+}
+.footer-container-content p.footer-subtitle{
+    font-size: 14px;
+    color: #808080;
+    margin: 8px 0px;
+}
+.footer-container-content p.footer-content{
+    margin: 8px 0px 16px 0px;
+    font-size: 14px;
+}
+
+.footer-container-content .social-icons{
+    display: flex;
+    gap: 25px;
+}
+.footer-container-content .social-icons i{
+    font-size: 24px;
+}
+.footer-container-2 p{
+    margin: 8px 0px;
+    font-size: 14px;
 }
