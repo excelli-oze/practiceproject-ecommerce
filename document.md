@@ -1,0 +1,6 @@
+- Created desktop, tablet and mobile view for the Flower website with figma template .
+- Updated All the files to the Github.
+- Git using VS code.
+- Using Stackedit for making Documents (https://stackedit.io/app#).
+- Deploy code on Cloudflare.
+- Learn about the conventional git commit (https://www.gitkraken.com/learn/git/best-practices/git-commit-message).
