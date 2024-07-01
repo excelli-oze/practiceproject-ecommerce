@@ -1,9 +1,11 @@
+@import url(./gilroy/Gilroy-Regular.ttf);
+
 body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: 1.5px solid black;
-    font-family: sans-serif;
+    font-family: 'Gilroy-Regular', sans-serif;
 }
 
 .border-top{
@@ -30,6 +32,9 @@ body{
 }
 .mobile-navigation-bar ul i{
     font-size: 24px;
+}
+.desktop-navigation-bar{
+    display: none;
 }
 
 
@@ -94,22 +99,37 @@ body{
 }
 
 .container-3 h2,
-.container-4 h2{
+.container-4 h2,
+.container-8 h2,
+.container-10 h2{
     margin: 0px;
     padding: 40px 16px;
-    font-size: 26px;
+    font-size: 34px;
+}
+.container-8-content h2{
+    padding: 16px 0px 16px 0px;
+}
+.container-8-content p,
+.container-9-content p{
+    margin-bottom: 64px;
 }
 .container-3-content,
 .container-4-content,
 .container-6,
-.container-7-content{
+.container-7-content,
+.container-8-content,
+.footer-container-content{
     padding: 40px 16px;
+}
+.container-8-content{
+    text-align: center;
 }
 .container-3-content p{
     padding-bottom: 20px;
 }
 .container-3-content span,
-.container-3-content button{
+.container-3-content button,
+.bordered-btn{
     text-transform: uppercase;
 }
 .container-3-content h3,
@@ -130,13 +150,25 @@ body{
     margin: 0px;
     padding: 16px 16px 8px 16px;
 }
-.container-3-content button{
+.container-3-content button,
+.bordered-btn{
     width: 100%;
     padding: 15px 20px;
     background-color: white;
     border: 1.5px solid black;
     border-radius: 0px;
     font-weight: 600;
+}
+
+.white-bordered-btn{
+    width: 100%;
+    padding: 15px 20px;
+    background-color: transparent;
+    border: 1.5px solid white;
+    border-radius: 0px;
+    text-transform: uppercase;
+    color: #fff;
+
 }
 
 .container-5 .image-box img{
@@ -157,14 +189,16 @@ body{
 .container-6 p{
     font-size: 18px;
 }
-.container-6 input{
+.container-6 input,
+.footer-container input{
     border: 1px solid #888;
     width: -webkit-fill-available;
     border-radius: 0px;
     margin: 20px 0px;
     padding: 15px 20px;
 }
-.container-6 button{
+.container-6 button,
+.footer-container button{
     background: #000;
     color: #fff;
     border-radius: 0px;
@@ -175,4 +209,302 @@ body{
 .container-7 p.contact-number,
 .container-7 p.office-address{
     font-weight: 600;
+}
+.container-8 img{
+    width: 100%;
+}
+
+.container-9{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(./Images/container-9-bg-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    padding: 40px 16px;
+    text-align: center;
+}
+.container-9-content h2{
+    font-size: 34px;
+    padding: 16px 0px;
+    margin: 0px;
+    font-weight: 400;
+}
+.container-10 p.review{
+    margin-bottom: 0px;
+    font-size: 22px;
+    font-style: italic;
+}
+.container-10 p.review-text{
+    margin: 0px 0px 8px 0px;
+}
+
+
+.footer-container-content p{
+    margin: 0px;
+}
+
+
+.footer-container-content h5{
+    font-size: 18px;
+    color: #424245;
+    margin: 16px 0px;
+}
+.footer-container-content p.footer-subtitle{
+    font-size: 14px;
+    color: #808080;
+    margin: 8px 0px;
+}
+.footer-container-content p.footer-content{
+    margin: 8px 0px 16px 0px;
+    font-size: 14px;
+}
+
+.footer-container-content .social-icons{
+    display: flex;
+    gap: 25px;
+}
+.footer-container-content .social-icons i{
+    font-size: 24px;
+}
+.footer-container-2 p{
+    margin: 8px 0px;
+    font-size: 14px;
+}
+.container-5-des{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.container-5-left,
+.container-5-right{
+    width: 100%;
+}
+.footer-container{
+    display: block;
+}
+
+@media(min-width: 376px){
+    .mobile-navigation-bar{
+        display: flex;
+    }
+    .desktop-navigation-bar{
+        display: none;
+    }
+    .bordered-btn,
+    .white-bordered-btn{
+        width: auto;
+    }
+    .container-7,
+    .social-wrapper{
+        display: flex;
+        text-align: center;
+    }
+    .container-7-contact,
+    .container-7-address,
+    .social-wrapper h3,
+    .social-wrapper div{
+        width: 50%;
+    }
+    .social-wrapper div{
+        justify-content: center;
+        border-left: 1.5px solid #000;
+    }
+    .container-7-contact{
+        border-right: 1.5px solid #000;
+    }
+    .container-5 .image-box{
+        display: flex;
+    }
+    .footer-container-upper2,
+    .footer-container-lower2{
+        display: flex;
+    }
+    .footer-container-upper2 div,
+    .footer-container-lower2 div{
+        width: 50%;
+        border-right: 1.5px solid #000;
+    }
+    h1{
+        font-size: 67px;
+    }
+    h2{
+        font-size: 50px !important;
+    }
+    h3{
+        font-size: 38px !important;
+    }
+    .container-1{
+        padding: 80px;
+    }
+    .container-1-heading p{
+        font-size: 18px;
+    }
+    .container-1 h1{
+        margin: 0px;
+    }
+    .container-1 .container-1-right-content p{
+        font-size: 14px;
+    }
+    .container-1-bottom .container-1-left-image{
+        padding-right: 24px;
+    }
+    .container-1-bottom .container-1-right-content{
+        padding-left: 24px;
+    }
+    .container-1-bottom{
+        padding: 0px;
+    }
+    .mobile-navigation-bar ul{
+        padding: 16px;
+    }
+    .flower-container-content span{
+        font-size: 16px;
+        bottom: 24px;
+    }
+    .container-6{
+        padding: 80px !important;
+    }
+    .container-6 h2{
+        padding: 0px !important;
+    }
+    .form-container{
+        display: flex;
+        align-items: baseline;
+        gap: 20px;
+    }
+    .form-container input{
+        padding: 25px 20px;
+        width: 50%;
+    }
+    .form-container button{
+        padding: 25px 20px;
+        width: 50%;
+    }
+    .container-8 h2:first-child,
+    .container-3 h2,
+    .container-4 h2{
+        padding: 80px !important;
+    }
+    .container-3-content, .container-4-content, .container-6, .container-7-content, .container-8-content{
+        padding: 80px;
+    }
+    .footer-container-content{
+        padding: 40px;
+    }
+    .container-7-content{
+        min-height: 104px;
+    }
+    .container-7-content:nth-child(2){
+        text-wrap: nowrap;
+    }
+    .container-8 img{
+        height: 30em;
+    }
+}
+
+
+@media(min-width: 769px){
+    .mobile-navigation-bar{
+        display: none !important;
+    }
+    .desktop-navigation-bar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .desktop-navigation-bar ul{
+        display: flex;
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+    .desktop-navigation-bar ul li{
+        padding: 24px 30px;
+        width: 80px;
+        text-align: center;
+    }
+    .desktop-navigation-bar ul li a{
+        font-size: 16px;
+        color: #000;
+        text-decoration: none;
+    }
+
+    .container-1{
+        box-sizing: border-box;
+        width: 50%;
+        border-right: 1.5px solid #000;
+    }
+    .container-1-des{
+        display: flex;
+    }
+    .flower-container-des{
+        width: 50%
+    }
+    .flower-containers.container-2{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .container-empty,
+    .container-2-content{
+        width: 50%;
+        box-sizing: border-box;
+    }
+    .container-2-content{
+        border-left: 1.5px solid #000;
+    }
+    .container-3 h2,
+    .container-4 h2,
+    .container-3-right,
+    .container-4-right{
+        width: 50%;
+        box-sizing: border-box;
+    }
+    .container-3,
+    .container-4{
+        display: flex;
+    }
+    .container-3 h2,
+    .container-4 h2{
+        border-top: 1.5px solid #000;
+        border-bottom: 1.5px solid #000;
+        border-right: 1.5px solid #000;
+    }
+    .container-5-des{
+        display: flex;
+        flex-direction: row;
+    }
+    .container-5-left,
+    .container-5-right{
+        width: 50%;
+    }
+    .container-5 img{
+        height: auto !important;
+    }
+    .container-5 h3,
+    .container-5 .social-wrapper .social-icons{
+        padding: 19px 16px !important;
+        align-items: center;
+    }
+    .container-5 h3{
+        border-left: 1.5px solid #000;
+    }
+    .container-6{
+        padding: 50px !important;
+    }
+    .footer-container{
+        display: flex;
+    }
+    .footer-container div{
+        width: 50%;
+    }
+    .container-8 h2{
+        text-align: center;
+    }
+    .container-8-des{
+        display: flex;
+        border-top: 1.5px solid #000;
+    }
+
+
+
+
+
 }
