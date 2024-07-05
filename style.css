@@ -1,4 +1,7 @@
 @import url(./gilroy/Gilroy-Regular.ttf);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body{
     box-sizing: border-box;
@@ -7,6 +10,7 @@ body{
     border: 1.5px solid black;
     font-family: 'Gilroy-Regular', sans-serif;
 }
+
 
 .border-top{
     border-top: 1.5px solid black;
@@ -418,7 +422,6 @@ body{
     }
     .desktop-navigation-bar ul li{
         padding: 24px 30px;
-        width: 80px;
         text-align: center;
     }
     .desktop-navigation-bar ul li a{
@@ -508,3 +511,169 @@ body{
 
 
 }
+@media(max-width: 768px){
+    .next, .prev{
+        display: none !important;
+    }
+}
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    text-align: center;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: -50px;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev {
+    position: absolute;
+    left: -50px;
+    border-radius: 3px 0 0 3px;
+  }
+
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    color: #333;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  footer *{
+    box-sizing: border-box;
+  }
+
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.menu-icon {
+    position: static;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.bar {
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 999;
+}
+
+.menu nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu nav ul li {
+    margin: 20px 0;
+}
+
+.menu nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+.menu-close {
+    position: absolute;
+    top: 5px;
+    left: 18px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+.product-page .mySlides {
+    display: none;
+    float: left;
+    width: 33.33%;
+  }
+
+  .product-page .next,
+  .product-page .prev{
+    top: 50% !important;
+  }
