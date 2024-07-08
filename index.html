@@ -12,8 +12,25 @@
 <body>
     <header>
         <nav class="mobile-navigation-bar border-bottom">
+            
             <ul class="left-nav-items border-right">
-                <i class="fa-solid fa-bars"></i>
+                <div class="menu-icon" id="menuIcon">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                
+                <div class="menu" id="menu">
+                    <div class="menu-close" id="menuClose">✖</div>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="./Product.html">Cart</a></li>
+                            <li><a href="#">Sign In</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </ul>
             <ul class="right-nav-items border-left">
                 <i class="fa-solid fa-bag-shopping"></i>
@@ -26,7 +43,7 @@
             </ul>
             <ul class="right-nav-items border-left">
                 <li><a href="">Sign In</a></li>
-                <li class="border-left"><a href="">Cart</a></li>
+                <li class="border-left"><a href="./Product.html">Cart</a></li>
             </ul>
         </nav>
     </header>
@@ -285,10 +302,38 @@
                 <img src="./Images/google logogoogle-logo.png" alt="" srcset=""></br>
                 <p class="review-text">Reviews</p>
                 <h2>Our Clients say</h2>
-                <p class="review">“Ordered flowers online and they were the best bouquet! Impressed everyone around.
-                    Highly recommend
-                    this flower shop!”</p>
-                <p>– Ronald Richards</p>
+
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                    <!-- Full-width slides/quotes -->
+                    <div class="mySlides">
+                        <p class="review">“aaa Ordered flowers online and they were the best bouquet! Impressed everyone around.
+                            Highly recommend
+                            this flower shop!”</p>
+                        <p>– Ronald Richards</p>
+                    </div>
+
+                    <div class="mySlides">
+                        <p class="review">“Ordered flowers online and they were the best bouquet! Impressed everyone around.
+                            Highly recommend
+                            this flower shop!”</p>
+                        <p>– Ronald Richards</p>
+                    </div>
+
+
+                    <!-- Next/prev buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+                <!-- Dots/bullets/indicators -->
+                <div class="dot-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+
+
                 <button class="bordered-btn">Read Reviews</button>
             </div>
         </div>
@@ -355,6 +400,8 @@
 
         </div>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
